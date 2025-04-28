@@ -31,7 +31,7 @@ pipeline {
     }
     stage('Deploy') {
     steps {
-        bat 'powershell -Command "Start-Process java -ArgumentList \'-jar\', \'target/java-webapp-1.0.jar\' -NoNewWindow -Wait"'
+        bat 'powershell -Command "Start-Process java -ArgumentList \'-jar\', \'target/java-webapp-1.0.jar\'"'
       }
     }
   }
