@@ -31,7 +31,7 @@ pipeline {
     }
     stage('Deploy') {
     steps {
-        bat 'java -jar target/java-webapp-1.0.jar'
+        bat 'start java -jar target/java-webapp-1.0.jar'
       }
     }
   }
